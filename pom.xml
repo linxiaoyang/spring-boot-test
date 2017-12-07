@@ -23,6 +23,7 @@
         <module>spring-boot-actuator-start</module>
         <module>spring-boot-runner-start</module>
         <module>spring-boot-event-listener-start</module>
+        <module>spring-boot-field-inject-start</module>
     </modules>
 
 
