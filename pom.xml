@@ -14,6 +14,8 @@
         <module>spring-boot-muiti-datasource-start</module>
         <module>spring-boot-swagger2-start</module>
         <module>spring-boot-localcache-start</module>
+        <module>spring-boot-dubbo-provider-start</module>
+        <module>spring-boot-dubbo-consumer-start</module>
     </modules>
 
 
@@ -76,6 +78,27 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>18.0</version>
+            </dependency>
+
+
+            <!--dubbo 的依赖-->
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba/dubbo -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>2.5.3</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.github.sgroschupf</groupId>
+                <artifactId>zkclient</artifactId>
+                <version>0.1</version>
             </dependency>
 
         </dependencies>
