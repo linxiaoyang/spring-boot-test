@@ -20,6 +20,7 @@
         <module>spring-boot-schedule-start</module>
         <module>spring-boot-velocity-start</module>
         <module>spring-boot-security-start</module>
+        <module>spring-boot-actuator-start</module>
     </modules>
 
 
