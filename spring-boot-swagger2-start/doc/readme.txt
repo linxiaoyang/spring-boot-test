@@ -1,0 +1,1 @@
+swagger2为接口提供在线的文档。启动成功后，访问地址：http://localhost:8080/swagger-ui.html。不仅提供在线文档，也提供测试的功能

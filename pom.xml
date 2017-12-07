@@ -12,6 +12,7 @@
         <module>spring-boot-start</module>
         <module>spring-boot-mybatis-start</module>
         <module>spring-boot-muiti-datasource-start</module>
+        <module>spring-boot-swagger2-start</module>
     </modules>
 
 
@@ -53,6 +54,19 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>1.1.6</version>
+            </dependency>
+
+
+            <!--生成文档-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>2.5.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>2.5.0</version>
             </dependency>
         </dependencies>
 
