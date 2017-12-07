@@ -1,7 +1,3 @@
-management:
-  security:
-    enabled: true
-    role: ADMIN
 security:
   user:
     name: root

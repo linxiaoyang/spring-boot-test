@@ -11,8 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 public class SecurityConfig {
 
     @Configuration
-    @Order(1)
-    public static class ApiWebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
+    public static class WebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
         @Override
         protected void configure(HttpSecurity http) throws Exception {
             http.csrf().disable();
@@ -24,21 +23,7 @@ public class SecurityConfig {
                     .anyRequest().permitAll()
                     .and()
                     .httpBasic()
-
             ;
         }
     }
-
-//    @Configuration
-//    public static class FormLoginWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
-//
-//        @Override
-//        protected void configure(HttpSecurity http) throws Exception {
-//            http
-//                    .authorizeRequests()
-//                    .anyRequest()
-//                    .permitAll();
-//        }
-//    }
-
 }
