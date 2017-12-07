@@ -1,3 +1,4 @@
 .idea/
-spring-boot-start/target
+*/target
 *.iml
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shuqi.dal.mapper.UserMapper">
+
+    <resultMap id="UserDOResultMap" type="com.shuqi.dal.model.UserDO">
+        <id column="id" property="id"/>
+        <result column="gmt_modified" property="gmtModified"/>
+        <result column="gmt_created" property="gmtCreated"/>
+        <result column="name" property="name"/>
+        <result column="status" property="status"/>
+
+
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        gmt_created,id,gmt_modified,`name`,`status`
+    </sql>
+
+    <insert id="create" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `user`
+        (
+               gmt_modified ,
+               gmt_created ,
+               `name`,
+               status
+        )
+        VALUES (
+               now()  ,
+               now()  ,
+               #{name},
+               #{status}
+        );
+    </insert>
+
+    <update id="modify">
+        UPDATE `user`
+        <set>
+            gmt_modified=now()
+
+            <if test="gmtCreated !=null">
+                ,gmt_created = #{gmtCreated}
+            </if>
+            <if test="name !=null">
+                ,`name` = #{name}
+            </if>
+            <if test="status !=null">
+                ,`status` = #{status}
+            </if>
+        </set>
+        where
+        id=#{id};
+    </update>
+    <select id="findByName" resultMap="UserDOResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        from `user` where name=#{name}
+    </select>
+
+
+</mapper>

@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-boot-start</module>
+        <module>spring-boot-mybatis-start</module>
     </modules>
 
 
@@ -34,7 +35,27 @@
                 <artifactId>lombok</artifactId>
                 <version>1.14.8</version>
             </dependency>
+
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.6</version>
+            </dependency>
         </dependencies>
+
+
     </dependencyManagement>
 
     <build>
