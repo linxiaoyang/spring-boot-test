@@ -17,10 +17,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.shuqi</groupId>
-            <artifactId>spring-boot-dubbo-provider-api</artifactId>
-        </dependency>
     </dependencies>
 
 
