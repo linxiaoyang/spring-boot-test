@@ -17,6 +17,7 @@
         <module>spring-boot-dubbo-provider-start</module>
         <module>spring-boot-dubbo-consumer-start</module>
         <module>spring-boot-remote-shell-start</module>
+        <module>spring-boot-schedule-start</module>
     </modules>
 
 
