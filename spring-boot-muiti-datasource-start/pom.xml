@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-boot-mybatis-start</artifactId>
+    <artifactId>spring-boot-muiti-datasource-start</artifactId>
 
     <properties>
         <java.version>1.8</java.version>
@@ -57,7 +57,7 @@
 
 
     <build>
-        <finalName>spring-boot-mybatis-start</finalName>
+        <finalName>spring-boot-muiti-datasource-start</finalName>
         <plugins>
 
             <plugin>
