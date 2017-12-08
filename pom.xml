@@ -25,6 +25,7 @@
         <module>spring-boot-event-listener-start</module>
         <module>spring-boot-field-inject-start</module>
         <module>spring-boot-test-start</module>
+        <module>spring-boot-rabbitmq-start</module>
     </modules>
 
 
