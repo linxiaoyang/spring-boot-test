@@ -1,1 +1,1 @@
-此项目是一个基础版本，教你如何使用spring boot跑起项目来
+基于spring boot的测试方案，可以指定ActiveProfiles激活不同的配置文件
