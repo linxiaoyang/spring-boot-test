@@ -26,6 +26,7 @@
         <module>spring-boot-field-inject-start</module>
         <module>spring-boot-test-start</module>
         <module>spring-boot-rabbitmq-start</module>
+        <module>spring-boot-docker-start</module>
     </modules>
 
 
