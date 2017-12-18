@@ -1,7 +1,3 @@
 .idea/
 **/target/
 *.iml
-*.class
-*.lst
-*.jar
-*.original
