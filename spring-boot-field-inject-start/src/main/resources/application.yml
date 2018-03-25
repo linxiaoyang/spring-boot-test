@@ -1,3 +1,14 @@
 db:
   username: root
   password: root
+  ipList:
+    - 192.168.100.0
+    - 192.168.100.1
+    - 192.168.100.2
+  map:
+    key1: value1
+    key2: value2
+    key3: value3
+  child:
+    address: 浙江省杭州市
+    postcode: 345678
