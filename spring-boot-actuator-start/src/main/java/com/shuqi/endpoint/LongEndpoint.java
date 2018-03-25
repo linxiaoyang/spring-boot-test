@@ -6,12 +6,12 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.atomic.AtomicLong;
 
 @Component
-public class IntegerEndpoint extends AbstractEndpoint<Long> {
+public class LongEndpoint extends AbstractEndpoint<Long> {
 
     private AtomicLong count = new AtomicLong();
 
-    public IntegerEndpoint() {
-        super("integer");
+    public LongEndpoint() {
+        super("long");
     }
 
     @Override
