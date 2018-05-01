@@ -9,7 +9,7 @@ import java.util.Map;
 
 
 /**
- * @author olifer
+ * @author linyang on 18/5/1.
  */
 public class MyOnPropertyCondition implements Condition {
 
