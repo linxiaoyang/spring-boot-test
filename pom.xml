@@ -28,6 +28,7 @@
         <module>spring-boot-rabbitmq-start</module>
         <module>spring-boot-docker-start</module>
         <module>spring-boot-logger-start</module>
+        <module>spring-boot-condition-start</module>
     </modules>
 
 

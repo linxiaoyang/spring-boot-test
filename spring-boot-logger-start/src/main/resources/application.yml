@@ -1,3 +1,3 @@
 logging:
   level:
-      com.shuqi.controller: error
+      com.shuqi.controller: info
